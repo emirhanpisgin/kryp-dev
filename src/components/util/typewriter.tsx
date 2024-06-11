@@ -9,13 +9,7 @@ interface TypeWriterProps extends React.ComponentProps<"div"> {
     onWritingEnd?: () => any;
 }
 
-export default function TypeWriter({
-    text,
-    duration,
-    onWritingEnd,
-    className,
-    ...props
-}: TypeWriterProps) {
+export default function TypeWriter({ text, duration, onWritingEnd, className, ...props }: TypeWriterProps) {
     const displayRef = useRef<HTMLDivElement>(null);
     const trackerRef = useRef<HTMLDivElement>(null);
 
@@ -59,10 +53,7 @@ export default function TypeWriter({
     }, []);
 
     return (
-        <div
-            className={cn("relative flex w-min whitespace-pre-wrap", className)}
-            {...props}
-        >
+        <div className={cn("relative flex w-min whitespace-pre-wrap", className)} {...props}>
             <div ref={displayRef} className="w-max">
                 {" "}
             </div>

@@ -80,7 +80,7 @@ const config = {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
                 blink: "blink ease-out 0.8s infinite",
-                "land-in": "land-in ease-in var(--land-delay,300ms) forwards",
+                "land-in": "land-in ease-in 500ms forwards var(--land-delay,300ms)",
             },
             fontFamily: {
                 sans: ["var(--font-sans)", ...fontFamily.sans],
